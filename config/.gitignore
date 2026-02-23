@@ -1,0 +1,6 @@
+# Gmail API Credentials
+# Download this from Google Cloud Console
+# See config/GMAIL_SETUP.md for instructions
+
+# This file should NOT be committed to Git
+# Rename your downloaded credentials file to: gmail_credentials.json

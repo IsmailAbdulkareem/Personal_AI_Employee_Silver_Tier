@@ -1,0 +1,291 @@
+# Skill: Weekly Business Audit
+
+## Description
+Conduct weekly audit of business metrics, tasks, and operations every Sunday to provide insights and recommendations.
+
+## When to Use
+- Scheduled every Sunday evening (automated via cron/Task Scheduler)
+- On-demand when business review is needed
+- End of month for monthly reporting
+- Before planning next week's priorities
+
+## Steps
+
+### 1. Gather Weekly Data
+```
+Collect metrics from:
+- /Done folder: Tasks completed this week
+- /Logs folder: System activity logs
+- Dashboard.md: Current status and stats
+- Bank/financial files (if available)
+- Calendar/schedule (if integrated)
+```
+
+### 2. Analyze Task Completion
+```
+Review completed tasks:
+- Count tasks completed this week
+- Categorize by type (email, LinkedIn, document, etc.)
+- Identify patterns in completed work
+- Note any incomplete or overdue tasks
+```
+
+### 3. Review Financial Activity
+```
+If financial data available:
+- Revenue received this week
+- Invoices sent
+- Invoices paid
+- Outstanding receivables
+- Expenses tracked
+```
+
+### 4. Identify Bottlenecks
+```
+Look for:
+- Tasks stuck in Needs_Action > 3 days
+- Pending approvals not actioned
+- Repeated task types (automation opportunity)
+- Blocked dependencies
+```
+
+### 5. Audit Subscriptions & Tools
+```
+Review:
+- Active subscriptions
+- Tool usage (from logs)
+- Unused services
+- Cost optimization opportunities
+```
+
+### 6. Generate Proactive Suggestions
+```
+Based on analysis:
+- Automation opportunities
+- Process improvements
+- Priority recommendations for next week
+- Resource allocation suggestions
+```
+
+### 7. Create Weekly Audit Report
+```
+Location: /Briefings/WEEKLY_AUDIT_[YYYY-MM-DD].md
+
+Use the Weekly Audit Template (see below)
+```
+
+### 8. Present to Human
+```
+- Save report in /Briefings
+- Create Needs_Action file highlighting key items
+- Update Dashboard with weekly stats
+- Schedule review meeting if needed
+```
+
+## Weekly Audit Template
+
+```markdown
+---
+type: weekly_audit
+week_ending: [YYYY-MM-DD]
+generated: [ISO timestamp]
+priority: high
+status: ready_for_review
+---
+
+# Weekly Business Audit
+## Week Ending: [YYYY-MM-DD]
+
+---
+
+## Executive Summary
+[Brief 2-3 sentence overview of the week]
+
+**Key Highlights:**
+- [Highlight 1]
+- [Highlight 2]
+- [Highlight 3]
+
+---
+
+## Task Metrics
+
+### Completion Summary
+| Metric | This Week | Last Week | Change |
+|--------|-----------|-----------|--------|
+| Tasks Completed | X | Y | +/-% |
+| Emails Processed | X | Y | +/-% |
+| LinkedIn Actions | X | Y | +/-% |
+| Plans Created | X | Y | +/-% |
+
+### Tasks by Category
+| Category | Count | Percentage |
+|----------|-------|------------|
+| Email Processing | X | % |
+| LinkedIn Engagement | X | % |
+| Document Processing | X | % |
+| Client Communication | X | % |
+| Other | X | % |
+
+### Top Completed Tasks
+1. [Task 1 - brief description]
+2. [Task 2 - brief description]
+3. [Task 3 - brief description]
+4. [Task 4 - brief description]
+5. [Task 5 - brief description]
+
+---
+
+## Financial Summary
+*(If financial data is integrated)*
+
+### Revenue
+- Invoices Sent: $X
+- Invoices Paid: $X
+- Outstanding: $X
+
+### Expenses
+- Subscriptions: $X
+- Other Expenses: $X
+
+### Net This Week
+- **Net**: $X (Revenue - Expenses)
+
+---
+
+## Bottlenecks Identified
+
+| Issue | Impact | Recommendation |
+|-------|--------|----------------|
+| [Bottleneck 1] | [High/Med/Low] | [Suggested fix] |
+| [Bottleneck 2] | [High/Med/Low] | [Suggested fix] |
+
+### Overdue Items
+- [ ] [Overdue task 1] - [X days overdue]
+- [ ] [Overdue task 2] - [X days overdue]
+
+---
+
+## Subscription Audit
+
+| Service | Cost/Month | Usage | Keep? |
+|---------|------------|-------|-------|
+| [Service 1] | $X | High/Med/Low | Yes/No |
+| [Service 2] | $X | High/Med/Low | Yes/No |
+| [Service 3] | $X | High/Med/Low | Maybe |
+
+**Optimization Opportunities:**
+- [Suggestion 1 - e.g., "Cancel unused Service X - save $Y/month"]
+- [Suggestion 2 - e.g., "Downgrade Service Y - save $Z/month"]
+
+---
+
+## Automation Opportunities
+
+| Task Type | Frequency | Time Saved | Priority |
+|-----------|-----------|------------|----------|
+| [Repetitive task 1] | X/week | Y hours | High/Med/Low |
+| [Repetitive task 2] | X/week | Y hours | High/Med/Low |
+
+---
+
+## Priorities for Next Week
+
+### High Priority
+1. [Priority 1]
+2. [Priority 2]
+3. [Priority 3]
+
+### Medium Priority
+1. [Priority 1]
+2. [Priority 2]
+
+### Low Priority
+1. [Priority 1]
+2. [Priority 2]
+
+---
+
+## AI Employee Performance
+
+### System Stats
+- **Uptime**: X%
+- **Watcher Detections**: X
+- **Actions Executed**: X
+- **Errors**: X
+
+### Improvements Made
+- [Improvement 1]
+- [Improvement 2]
+
+---
+
+## Notes & Observations
+[Any additional insights, patterns, or recommendations]
+
+---
+
+## Action Items for Human
+- [ ] Review this audit report
+- [ ] Address bottlenecks identified
+- [ ] Approve subscription changes
+- [ ] Set priorities for next week
+
+---
+
+*Generated by AI Employee - Weekly Audit Skill*
+```
+
+## Scheduling
+
+### Linux/Mac (Cron)
+```bash
+# Weekly audit every Sunday at 8:00 PM
+0 20 * * 0 cd /path/to/Silver_Tier && python scripts/weekly_audit.py
+```
+
+### Windows (Task Scheduler)
+```powershell
+# Create scheduled task for weekly audit
+schtasks /create /tn "AI_Employee_Weekly_Audit" /tr "python C:\path\to\scripts\weekly_audit.py" /sc weekly /d SUN /st 20:00
+```
+
+## MCP Tools Used
+- None directly - this is an analysis skill
+- May use email_mcp to send audit summary
+- May use other tools to gather data
+
+## Approval Required
+**NO** - Audit is informational only
+**YES** - Any actions recommended require separate approval
+
+## Integration with Daily Briefing
+```
+Weekly Audit complements Daily Briefing:
+- Daily Briefing: Today's tasks and priorities
+- Weekly Audit: Retrospective analysis and insights
+
+Both reports should be consistent in metrics.
+```
+
+## Metrics Calculation
+
+### Task Completion Rate
+```
+Completion Rate = (Tasks Completed / Tasks Detected) * 100
+```
+
+### Average Response Time
+```
+Avg Response = Sum(Response Times) / Number of Responses
+```
+
+### Week-over-Week Growth
+```
+Growth = ((This Week - Last Week) / Last Week) * 100
+```
+
+## Related Skills
+- [[../plan-creator]] - Create plans from audit recommendations
+- [[../email]] - Send audit summary via email
+- [[../approval-workflow]] - Approve recommended changes

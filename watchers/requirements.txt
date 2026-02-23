@@ -1,0 +1,14 @@
+# Python dependencies for AI Employee watchers
+watchdog>=3.0.0
+python-dotenv>=1.0.0
+
+# Gmail Watcher dependencies
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.1.0
+google-auth-oauthlib>=1.0.0
+
+# WhatsApp Watcher dependencies
+playwright>=1.40.0
+
+# LinkedIn Watcher dependencies
+requests>=2.31.0

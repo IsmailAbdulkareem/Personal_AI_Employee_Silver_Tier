@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(chmod +x D:/Documents/GitHub/Personal_AI_Employee_Bronze_Tier/.claude/skills/process-tasks/skill.py)",
+      "Bash(python watchers/filesystem_watcher.py)",
+      "Bash(git add .)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git add START_HERE.md)",
+      "Bash(git add README.md)",
+      "Bash(git remote get-url origin)"
+    ]
+  }
+}

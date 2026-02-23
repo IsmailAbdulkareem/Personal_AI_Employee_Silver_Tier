@@ -1,0 +1,15 @@
+# Obsidian
+.obsidian/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+.DS_Store
+
+# Sensitive data
+.env
+credentials.json
+tokens/
+sessions/

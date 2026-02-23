@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Obsidian
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache
+
+# Logs
+*.log
+logs/
+*.output
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Credentials and secrets
+credentials.json
+gmail_credentials.json
+gmail_token.json
+tokens/
+sessions/
+whatsapp_session/
+*.key
+*.pem
+linkedin_credentials.json
+linkedin_token.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Claude Code
+.claude/mcp.json
+.claude/settings.json
+
+# Test files (keep structure, ignore content)
+AI_Employee_Vault/Inbox/*.txt
+AI_Employee_Vault/Inbox/*.pdf
+AI_Employee_Vault/Inbox/*.doc*
+
+# Keep folder structure
+!AI_Employee_Vault/Inbox/.gitkeep
+!AI_Employee_Vault/Needs_Action/.gitkeep
+!AI_Employee_Vault/Done/.gitkeep
+!AI_Employee_Vault/Plans/.gitkeep
+!AI_Employee_Vault/Logs/.gitkeep
